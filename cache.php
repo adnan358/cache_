@@ -14,7 +14,7 @@ class cache_
 		
 		if(!file_exists($this->path))
 		{	
-			echo 'cache dosyası olusturuldu<br>';
+			//echo 'cache dosyası olusturuldu<br>';
 			mkdir($this->path);
 			chmod($this->path,0777);
 		}
@@ -33,12 +33,12 @@ class cache_
 			if(file_exists($file))
 			{
 				include($file);
-				echo '<br>Dosya ınclude Edildi<br>';
+				//echo '<br>Dosya ınclude Edildi<br>';
 				exit;
 			}
 			else
 			{
-				echo '<br>Dosya Yok';
+				//echo '<br>Dosya Yok';
 				ob_start();
 			}
 		}
@@ -47,12 +47,12 @@ class cache_
 			if(file_exists($file) and (time() - $this->time < filemtime($file)))
 			{
 				include($file);
-				echo 'Dosya Onceden varmıs Onu ınclude ettım<br>';
+				//echo 'Dosya Onceden varmıs Onu ınclude ettım<br>';
 				exit;
 			}
 			else
 			{
-				echo 'Dosya Onceden varmıs Onu sildim bastan olusturom<br>';
+				//echo 'Dosya Onceden varmıs Onu sildim bastan olusturom<br>';
 				unlink($file);
 				ob_start();
 			}
@@ -68,7 +68,7 @@ class cache_
 
 		ob_end_flush();
 		
-		echo 'Dosya yazıldı.<br>';
+		//echo 'Dosya yazıldı.<br>';
 	}
 }
 
