@@ -13,3 +13,7 @@ Varsa istediğimiz cache yolunu yazıyoruz yoksa varsayılan olarak kendisi cach
 cache_time cache dosyasının süresi, bos bırakırsak cachelenen dosya tekrar kontrol edilmez.
 
 sayfanın en sonunada ise;
+
+$cache->cache_end();
+
+yazıyoruz ve hersey tamamlanıyor.
