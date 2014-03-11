@@ -5,7 +5,7 @@ Php cache Sistemi için class
 -----------------------------
 
 <h5>
-include('cache.php');
+include('cache.php');<br>
 $cache = new cache_(cache_path,cache_time);
 </h5>
 
