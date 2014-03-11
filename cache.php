@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 
 class cache_
 {
@@ -72,19 +72,4 @@ class cache_
 	}
 }
 
-$x = new cache_('cache',5);
-
-?>
-<html>
-	<head>
-    	<title>Deneme Cache</title>
-    </head>
-    
-    <body>
-    
-    </body>
-</html>
-
-<?php 
-$x->cache_end();
 ?>
